@@ -1,4 +1,6 @@
 ---
+import Header from "../components/Header.astro";
+
 const { headerTitle } = Astro.props;
 ---
 
@@ -11,6 +13,7 @@ const { headerTitle } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{headerTitle}</title>
   </head>
+  <Header />
   <body>
     <slot />
   </body>
