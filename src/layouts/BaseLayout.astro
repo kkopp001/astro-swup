@@ -17,7 +17,9 @@ const { headerTitle, metaDesc } = Astro.props;
   </head>
   <Header />
   <body>
-    <slot />
-    <script src="https://unpkg.com/swup@3"></script>
+    <main id="swup" class="transition-fade">
+      <slot />
+    </main>
+    <script src="../js/transitions.js"></script>
   </body>
 </html>
